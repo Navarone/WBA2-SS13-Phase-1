@@ -1,0 +1,27 @@
+{
+    "gruppenanmeldung": {
+        "gruppe": {
+            "gruppenleiter": {
+                "vorname": "Marius",
+                "nachname": "Müller",
+                "email": "marius@mueller.de",
+                "<geburtsdatum": "18.07.1957",
+                "erfahrung": "Profi",
+                "schlagzeug": "vorhanden",
+                "anmerkungen": "Alle sollen puenktlich am Treffpunkt erscheinen."
+            },
+            "gruppenmitlgieder": [
+                {
+                    "gruppenmitglied": {
+                        "vorname": "Darius",
+                        "nachname": "Don",
+                        "email": "D.Don@web.de",
+                        "geburtsdatum": "08.01.1978",
+                        "erfahrung": "Amateur",
+                        "schlagzeug": "nicht vorhanden"
+                    }
+                }
+            ]
+        }
+    }
+}
