@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gruppenanmeldung>
+	<gruppe>
+	<gruppenleiter>
+		<vorname>Marius</vorname>
+		<nachname>Müller</nachname>
+		<email>marius@mueller.de</email>
+		<geburtsdatum>18.07.1957</geburtsdatum>
+		<erfahrung>Profi</erfahrung>
+		<schlagzeug>vorhanden</schlagzeug>
+		<anmerkungen>Alle sollen puenktlich am Treffpunkt erscheinen.</anmerkungen>
+	</gruppenleiter>
+	
+	<gruppenmitlgieder>
+		<gruppenmitglied>
+			<vorname>Darius</vorname>
+			<nachname>Don</nachname>
+			<email>D.Don@web.de</email>
+			<geburtsdatum>08.01.1978</geburtsdatum>
+			<erfahrung>Amateur</erfahrung>
+			<schlagzeug>nicht vorhanden</schlagzeug>
+		</gruppenmitglied>
+	</gruppenmitlgieder>
+	</gruppe>
+</gruppenanmeldung>
