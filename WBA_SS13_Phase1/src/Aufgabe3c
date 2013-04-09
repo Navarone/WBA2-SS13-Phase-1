@@ -1,0 +1,36 @@
+Folgende Daten müssen in einem simple-type abgebildet werden, da sie ein einfacher und somit nicht zusammengesetzter Typ sind:
+- Titel, Untertitel, Bild, Portionen, Schwierigkeitsgrad
+- Sie brauchen nur das was zwischen den öffnenden und schließenden Tags stehen.
+
+Folgende Daten müssen in einem complex-type abgebildet werden, da sie ein zusammengesetzter Typ mit teilweise mehreren Werten sind:
+- Rezepte, Rezept, Zutaten, Zutat, Zubereitung, Brennwert, Arbeitszeit, Zubereitungschritte
+- Anders als bei den oben genannten simple-types ist es bei diesen complex-types der Fall, dass Attribute, andere Elemente oder eine Mischung von Elementen und Text, etc enthalten sein kann.
+
+
+Für folgende Daten ist die Abbildung in Attributen sinnvoller:
+- Bei Zutat --> Bezeichnung, Menge, Einheit (g, TL, Pkt., ...)
+- Bei Arbeitszeit --> Dauer, Einheit (Min., Std.)
+- Bei Ruhezeit --> Dauer, Einheit (Min., Std.)
+- Bei Schwierigkeitsgrad --> Typ (simpel, normal, pfiffig)
+- Bei Brennwert --> Menge, Einheit (kcal, keine Angabe)
+- Bei Kommentar --> Autor, Datum, Uhrzeit, Text
+
+
+
+Folgende Datentypen müssen für die Elemete definiert werden:
+- Titel: string
+- Untertitel: string
+- Autor: string
+- Bild: anyURI
+- Portionen: int
+- Zubereitungsschritt: string
+
+
+
+
+Folgende Ristriktionen müssen definiert werden, um einen geregelten Standard an Begriffen vorzudefinieren:
+- Zutat/Einheit: g, kg, TL, Pkt., Pck., Stk., etc.
+- Arbeitszeit/Einheit: Min., Std.
+- Ruhezeit/Einheit: Min., Std.
+- Schwierigkeitsgrad: simple, normal, pfiffig
+- Brennwert:  kcal, keine Angabe
