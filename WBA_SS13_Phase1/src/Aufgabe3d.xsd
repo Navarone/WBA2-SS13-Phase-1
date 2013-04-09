@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/Aufgabe3d" xmlns:tns="http://www.example.org/Aufgabe3d" elementFormDefault="qualified">
+	<xs:element name="Rezepte">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Rezept" maxOccurs="unbounded" minOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Titel" type="xs:string" maxOccurs="1" minOccurs="1"/>
+							<xs:element name="Untertitel" type="xs:string" minOccurs="0" maxOccurs="1"/>
+							<xs:element name="Autor" type="xs:string"/>
+							<xs:element name="Bild" type="xs:anyURI" minOccurs="0"/>
+							<xs:element name="Zutaten">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Zutat" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:attribute name="Bezeichnung" type="xs:string" use="required"/>
+												<xs:attribute name="Menge" type="xs:float" use="optional"/>
+												<xs:attribute name="Einheit" use="optional">
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:enumeration value="g"/>
+															<xs:enumeration value="TL"/>
+															<xs:enumeration value="Pkt."/>
+															<xs:enumeration value="Stk."/>
+															<xs:enumeration value="ml"/>
+															<xs:enumeration value="l"/>
+															<xs:enumeration value="Pck."/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Zubereitung">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Portionen" type="xs:int" minOccurs="1"/>
+										<xs:element name="Arbeitszeit">
+											<xs:complexType>
+												<xs:attribute name="Dauer" type="xs:int"/>
+												<xs:attribute name="Zeitangabe">
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:enumeration value="Min."/>
+															<xs:enumeration value="Std."/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Ruhezeit" minOccurs="0">
+											<xs:complexType>
+												<xs:attribute name="Dauer" type="xs:int"/>
+												<xs:attribute name="Zeitangabe">
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:enumeration value="Min."/>
+															<xs:enumeration value="Std."/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Schwierigkeitsgrad">
+											<xs:complexType>
+												<xs:attribute name="Typ">
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:enumeration value="simpel"/>
+															<xs:enumeration value="normal"/>
+															<xs:enumeration value="pfiffig"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Brennwert_p.P.">
+											<xs:complexType>
+												<xs:attribute name="Einheit">
+													<xs:simpleType>
+														<xs:restriction base="xs:string">
+															<xs:enumeration value="kcal"/>
+															<xs:enumeration value="keine Angabe"/>
+														</xs:restriction>
+													</xs:simpleType>
+												</xs:attribute>
+												<xs:attribute name="Menge" type="xs:int"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="Zubereitungsschritte">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="Zubereitungsschritt" type="xs:string" maxOccurs="unbounded"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Kommentare" maxOccurs="1" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Kommentar" maxOccurs="unbounded" minOccurs="0">
+											<xs:complexType>
+												<xs:attribute name="Autor" type="xs:string"/>
+												<xs:attribute name="Datum" type="xs:date"/>
+												<xs:attribute name="Uhrzeit" type="xs:time"/>
+												<xs:attribute name="Text" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
+<!-- unter element Zutat in dem Complex Type wird keine Sequence benötigt, da keine Elemente verwendet werden -->
