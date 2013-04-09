@@ -1,24 +1,29 @@
+#Von der Struktur sieht das .json-file ähnlich der .xml-datei aus.
+#Da die Syntax aber einfacher gestaltet ist, ist sie leichter zu lesen und zu schreiben.
+#Anders jedoch als .xml werden die Elemente hier nicht mit Tags, sondern mit geschweiften Klammern (für Objekte),
+#sowie eckigen Klammern (für Arrays) genutzt.
+
 {
-    "gruppenanmeldung": {
-        "gruppe": {
-            "gruppenleiter": {
-                "vorname": "Marius",
-                "nachname": "Müller",
-                "email": "marius@mueller.de",
-                "<geburtsdatum": "18.07.1957",
-                "erfahrung": "Profi",
-                "schlagzeug": "vorhanden",
-                "anmerkungen": "Alle sollen puenktlich am Treffpunkt erscheinen."
+    "gruppenanmeldung":{
+        "gruppe":{
+            "gruppenleiter":{
+                "vorname":"Marius",
+                "nachname":"Müller",
+                "email":"marius@mueller.de",
+                "<geburtsdatum":"18.07.1957",
+                "erfahrung":"Profi",
+                "schlagzeug":"vorhanden",
+                "anmerkungen":"Alle sollen puenktlich am Treffpunkt erscheinen."
             },
-            "gruppenmitlgieder": [
+            "gruppenmitlgieder":[
                 {
-                    "gruppenmitglied": {
-                        "vorname": "Darius",
-                        "nachname": "Don",
-                        "email": "D.Don@web.de",
-                        "geburtsdatum": "08.01.1978",
-                        "erfahrung": "Amateur",
-                        "schlagzeug": "nicht vorhanden"
+                    "gruppenmitglied":{
+                        "vorname":"Darius",
+                        "nachname":"Don",
+                        "email":"D.Don@web.de",
+                        "geburtsdatum":"08.01.1978",
+                        "erfahrung":"Amateur",
+                        "schlagzeug":"nicht vorhanden"
                     }
                 }
             ]
