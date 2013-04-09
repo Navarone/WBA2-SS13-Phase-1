@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Rezepte xmlns:tns="http://www.example.org/Aufgabe3d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/Aufgabe3d Aufgabe3d.xsd ">
+  <tns:Rezept>
+  <!-- Da diese .xml-Datei anhand des .xsd-files erstellt wurde und dort Dinge definiert wurden wie z.B. Ristriktionen o.ä., kann hier in der auszufüllenden .xml-Datei nun teilweise mit vordefinierten Werten gearbeitet werden. -->
+    <tns:Titel>Lenchen's Schokoladenkuchen</tns:Titel>
+    <!-- Ein Untertitel könnte an dieser Stelle noch hinzugefügt werden. -->
+    <tns:Autor>Leen</tns:Autor>
+    <tns:Bild>http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/13053-960x720-lenchen_s_schokoladenkuchen.jpg</tns:Bild>
+    <tns:Zutaten>
+      <tns:Zutat Bezeichnung="Butter" Menge="200" Einheit="g"/>
+      <tns:Zutat Bezeichnung="Zucker" Menge="200" Einheit="g"/>
+      <tns:Zutat Bezeichnung="Schokolade, Blockschokolade" Menge="200" Einheit="g"/>
+      <tns:Zutat Bezeichnung="Mehl" Menge="120" Einheit="g"/>
+      <tns:Zutat Bezeichnung="Backpulver" Menge="0.5" Einheit="TL"/>
+      <tns:Zutat Bezeichnung="Vanillezucker" Menge="1" Einheit="Pkt."/>
+      <tns:Zutat Bezeichnung="Ei(er)" Menge="4" Einheit="Stk."/>
+    </tns:Zutaten>
+    <tns:Zubereitung>
+      <tns:Portionen>16</tns:Portionen>
+      <tns:Arbeitszeit Dauer="1" Zeitangabe="Std."/>
+      <tns:Schwierigkeitsgrad Typ="normal"/>
+      <tns:Brennwert_p.P. Einheit="kcal" Menge="295"/>
+      <tns:Zubereitungsschritte>
+      	<!-- Pro Satz bzw. Zubereitungsschritt wurde ein Tag gewählt, um so genauer die einzelnen Schritte auseinander halten zu können. -->
+        <tns:Zubereitungsschritt>Butter und Schokolade im Wasserbad schmelzen.</tns:Zubereitungsschritt>
+        <tns:Zubereitungsschritt>Eier trennen.</tns:Zubereitungsschritt>
+        <tns:Zubereitungsschritt>Eigelbe, Zucker und Eiweiß steif schlagen.</tns:Zubereitungsschritt>
+        <tns:Zubereitungsschritt>Vanillezucker verrühren.</tns:Zubereitungsschritt>
+        <tns:Zubereitungsschritt>Geschmolzene Butter-Schokomasse hinzufügen und mischen.</tns:Zubereitungsschritt>
+        <tns:Zubereitungsschritt>Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig unterheben.</tns:Zubereitungsschritt>
+        <tns:Zubereitungsschritt>In eine gut gefettete Form geben.</tns:Zubereitungsschritt>
+        <tns:Zubereitungsschritt>Bei 180°Grad 40 – 50 Minuten backen.</tns:Zubereitungsschritt>
+      </tns:Zubereitungsschritte>
+    </tns:Zubereitung>
+    <tns:Kommentare>
+    	<tns:Kommentar Autor="swieselchen" Datum="2002-02-07" Uhrzeit="18:49:00" Text="Habe Deinen Kuchen gestern gebacken (kleine Abwandlung: statt Blockschokolade hatte ich nur Kuvertüre, zartbitter und ich habe noch etwas Rumaroma und eine Prise Salz dazugegeben) mein LAG war total begeistert. Ich übrigends auch, super Rezept."/>
+    	<tns:Kommentar Autor="Mane" Datum="2003-01-01" Uhrzeit="15:06:00" Text="Habe ihn eben gebacken und bin begeistert.Super Rezept:-)"/>
+    </tns:Kommentare>
+  </tns:Rezept>
+  <tns:Rezept>
+  	<tns:Titel>Rosinenbrot</tns:Titel>
+  	<!-- Auch hier ist die Auswahl eines Untertitels Möglich. -->
+    <tns:Autor>knoedelmaus</tns:Autor>
+    <tns:Bild>http://static.chefkoch-cdn.de/ck.de/rezepte/152/152146/361634-960x720-rosinenbrot.jpg</tns:Bild>
+    <tns:Zutaten>
+      <tns:Zutat Bezeichnung="Milch" Menge="500" Einheit="ml"/>
+      <tns:Zutat Bezeichnung="Mehl, (Typ 550)" Menge="900" Einheit="g"/>
+      <tns:Zutat Bezeichnung="Margarine" Menge="80" Einheit="g"/>
+      <tns:Zutat Bezeichnung="Zucker" Menge="80" Einheit="g"/>
+      <tns:Zutat Bezeichnung="Salz" Menge="6" Einheit="g"/>
+      <tns:Zutat Bezeichnung="Trockenhefe" Menge="2" Einheit="Pck."/>
+      <tns:Zutat Bezeichnung="Rosinen" Menge="150" Einheit="g"/>
+      <tns:Zutat Bezeichnung="Margarine, zum einfetten"/>
+    </tns:Zutaten>
+    <tns:Zubereitung>
+      <tns:Portionen>1</tns:Portionen>
+      <tns:Arbeitszeit Dauer="15" Zeitangabe="Min."/>
+      <tns:Ruhezeit Dauer="2" Zeitangabe="Std."/>
+      <tns:Schwierigkeitsgrad Typ="simpel"/>
+      <tns:Brennwert_p.P. Einheit="keine Angabe"/>
+      <tns:Zubereitungsschritte>
+        <tns:Zubereitungsschritt>Margarine auflösen, die Milch zugeben.</tns:Zubereitungsschritt>
+        <tns:Zubereitungsschritt>Diese Flüssigkeit mit Mehl, Zucker, Salz und Dauerbackhefe zu einem festen Teig verkneten, zum Schluss noch die Rosinen unterkneten.</tns:Zubereitungsschritt>
+        <tns:Zubereitungsschritt>Den Teig ca. 1 Std. gehen lassen.</tns:Zubereitungsschritt>
+        <tns:Zubereitungsschritt>Danach noch einmal durchkneten und in eine gefettete Brotback- oder große Kastenkuchenform geben.</tns:Zubereitungsschritt>
+        <tns:Zubereitungsschritt>Backofen auf 50° C vorheizen, ausstellen und das Brot darin noch einmal ca. 15 Min. gehen lassen.</tns:Zubereitungsschritt>
+        <tns:Zubereitungsschritt>Danach den Backofen auf 180° C Ober- und Unterhitze einstellen und das Rosinenbrot ca. 40 - 45 Min. backen.</tns:Zubereitungsschritt>
+      </tns:Zubereitungsschritte>
+    </tns:Zubereitung>
+    <tns:Kommentare>
+    	<!-- Kommentare können innerhalb der Attribute auch über mehrere Zeilen gehen und müssen nicht wie in Rezept 1 nur in einer Zeile stehen. -->
+    	<tns:Kommentar Autor="Hobbykochen" Datum="2010-09-17" Uhrzeit="16:23:00" Text="Hallo Knödelmaus,
+
+		habe heute dieses wunderbare Rosinenbrot gebacken. Muss sagen, perfekt, ein toller Teig, der nicht klebt sich wunderbar verarbeiten läßt und auch noch wunderbar schmeckt. Ich hatte leider kein Mehl (Typ 550) und habe dann mein übliches Mehl Type 405) genommen, ansonsten genau nach Anleitung. Der Teig ist wunderbar aufgegangen.
+		Eine Frage habe ich nur, aber ich denke das geht, hast Du schon Erfahrung mit Einfrieren. Ich friere immer gerne 3-4 Scheiben ein und hole diese dann nach Bedarf aus der Truhe!.Ich werde es versuchen und das Ergebnis mitteilen.
+
+		Dankeschön für das schöne Rezept, ist schon gespeichert. Fotos von dem heutigen Ergebnis sind schon unterwegs.
+
+
+		Liebe Grüße aus Hilden
+		Birgit "/>
+    	<tns:Kommentar Autor="Amboss110" Datum="2010-09-19" Uhrzeit="22:26:00" Text="Hallo knoedelmaus,
+
+		auch wir haben dein Rosinenbrot heute getestet.
+
+		Einfach in der Herstellung, lecker in der Vertilgung.
+
+		Ich hatte leider keine Margarine mehr und habe stattdessen Sonnenblumenöl genommen - war kein Problem.
+
+		Herzlichen Dank für das tolle Rezept.
+		Bilder werden hochgeladen.
+
+		Gruß
+		Amboss110 "/>
+    </tns:Kommentare>
+  </tns:Rezept>
+</tns:Rezepte>
