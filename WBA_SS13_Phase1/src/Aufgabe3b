@@ -1,0 +1,16 @@
+Gemeinsamkeiten:
+- Alle Rezepte haben einen Titel
+- Der Bereich, um ein Bild zu platzieren, ist vorhanden
+- Unter den Punkt "Zutaten" wird immer die Bezeichnung der Zutat angegeben
+- Unter dem Punkt "Zubereitung" wird immer angezeigt die Arbeitszeit, der Schwierigkeitsgrad, sowie der Brennwert p.P. und die Zubereitungsschritte, um das Gericht herzustellen.
+- Im unteren Bereich des Rezeptes findet man dann jeweils die zugehörigen Kommentare anderer User (Angaben: Username, Datum, Uhrzeit, Text)
+
+
+
+Unterschiede:
+- Einige Rezepte haben einen Untertitel, ander wiederum nicht
+- Nicht jedes Rezept hat ein Bild hochgeladen
+- Bei den Zutaten ist nicht immer auch eine Mengenangabe oder Einheit angegeben bzw. gefordert
+- Die Einheiten der einzelnen Zutaten können je nach Rezept variieren
+- Bei der Zubereitung ist der Punkt "Ruhezeit" optional, z.B. bei Brot, da nicht jedes Rezept eine Ruhezeit benötigt
+- Ebenso wird bei der Zubereitung der Punkt "Brennwert p.P." angezeigt, kann jedoch auch den Wert "keine Angabe" enthalten
