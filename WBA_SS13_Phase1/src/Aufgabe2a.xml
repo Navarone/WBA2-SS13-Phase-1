@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Als erstes wird hier der Start-Tag "Gruppenanmeldung" erstellt, der erst ganz unten wieder geschlossen wird.
+     Das hat den Hintergrund, dass alles was dazwischen steht in diese Gruppenanmeldung gehört.  -->
 <gruppenanmeldung>
-	<gruppe>
+    <!-- Hier wird die Gruppe definiert. Bestehend aus einem Gruppenleiter und Gruppenmitlgiedern. -->
+	<gruppe> 
 	<gruppenleiter>
 		<vorname>Marius</vorname>
 		<nachname>Müller</nachname>
@@ -12,6 +16,8 @@
 	</gruppenleiter>
 	
 	<gruppenmitlgieder>
+	    <!-- Dem Tag "Gruppenmitglieder" kann hier nun jeweils ein Gruppenmitlglied hinzugefügt werden 
+	         und die einzelnen Elemte wie Vorname, Nachname, etc. definiert werden. -->
 		<gruppenmitglied>
 			<vorname>Darius</vorname>
 			<nachname>Don</nachname>
