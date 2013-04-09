@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Es gibt 2 Möglichkeiten eine .xml-Datei zu erstellen. Durch Element-Typen oder Attribut-Typen. 
+	 Um später die Möglichkeit zu haben auch mehrere Rezepte erstellen zu können, habe ich den Tag "Rezept" in den übergeortneten Tag "Rezepte" eingebunden. 
+	 Die einzelnen Tags wie: Titel, Autor, Bild habe ich als Element definiert, da hier nur ein kurzer Text bzw. ein Bild sein soll.
+	 Die Zutaten jedoch habe ich als Attribute definiert, da somit die einzelnen Attribute leichter zu überschauen sind und es mir in der weiteren Bearbeiotung ggfs. von Vorteil sein könnte.
+	 Man hätte es jedoch auch komplett als Elemte aufführen können. Das war mein erster Gedankengang. Ich habe mich aber alleine wegen der Optik schon für den Attribut-Typen entschieden.--> 
+
+<Rezepte xmlns:tns="http://www.example.org/Aufgabe3a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/Aufgabe3a">
+	<Rezept>
+		<Titel>Lenchen's Schokoladenkuchen</Titel>
+		<Autor>Leen</Autor>
+		<Bild>http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/13053-960x720-lenchen_s_schokoladenkuchen.jpg</Bild>
+		<Zutaten>
+			<!-- Zutaten sind unterteils in jeweils eine eigene Zutat mit ihrer Bezeichnung, Menge, sowie Einheit -->
+			<Zutat Bezeichnung="Butter" Menge="200" Einheit="g"/>
+			<Zutat Bezeichnung="Zucker" Menge="200" Einheit="g"/>
+			<Zutat Bezeichnung="Schokolade, Blockschokolade" Menge="200" Einheit="g"/>
+			<Zutat Bezeichnung="Mehl" Menge="120" Einheit="g"/>
+			<Zutat Bezeichnung="Backpulver" Menge="1/2" Einheit="TL"/>
+			<Zutat Bezeichnung="Vanillezucker" Menge="1" Einheit="Pkt."/>
+			<Zutat Bezeichnung="Ei(er)" Menge="4" Einheit="Stk."/>
+		</Zutaten>
+		<Zubereitung>
+			<!-- Die Zubereitung ist unterteilt in: 
+				 Portionen, für die das einzelne Rezept gedacht sind, Arbeitszeit, Schwierigkeitsgrad, Brennwert pro Person und Zubereitungsschritte. -->
+			<Portionen>16</Portionen>
+			<Arbeitszeit Dauer="1" Zeitangabe="Std."/>
+			<Schwierigkeitsgrad Typ="normal"/>
+			<Brennwert_p.P. Einheit="kcal" Menge="295"/>
+			<Zubereitungsschritte>
+				<!-- Die Zubereitungsschritte sind noch einmal unterteilt, sodass  jeder Schritt einzelnd aufgeführt wird. -->
+				<Zubereitungsschritt>Butter und Schokolade im Wasserbad schmelzen.</Zubereitungsschritt>
+				<Zubereitungsschritt>Eier trennen.</Zubereitungsschritt>
+				<Zubereitungsschritt>Eigelbe, Zucker und Eiweiß steif schlagen.</Zubereitungsschritt>
+				<Zubereitungsschritt>Vanillezucker verrühren.</Zubereitungsschritt>
+				<Zubereitungsschritt>Geschmolzene Butter-Schokomasse hinzufügen und mischen.</Zubereitungsschritt>
+				<Zubereitungsschritt>Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig unterheben.</Zubereitungsschritt>
+				<Zubereitungsschritt>In eine gut gefettete Form geben.</Zubereitungsschritt>
+				<Zubereitungsschritt>Bei 180°Grad 40 – 50 Minuten backen. </Zubereitungsschritt>
+			</Zubereitungsschritte>
+		</Zubereitung>
+		<Kommentare>
+			<!-- Hier werden einzelne Kommentare in dem Tag "Kommentare" verfasst. Der Tag "Kommentar" selber ist als Attribut deffiniert, da er mehrere Werte enthält. -->
+			<Kommentar Autor="swieselchen" Datum="07.02.2002" Uhrzeit="18:49 Uhr" Text="Habe Deinen Kuchen gestern gebacken (kleine Abwandlung: statt Blockschokolade hatte ich nur Kuvertüre, zartbitter und ich habe noch etwas Rumaroma und eine Prise Salz dazugegeben) mein LAG war total begeistert. Ich übrigends auch, super Rezept."/>
+		</Kommentare>
+	</Rezept>
+</Rezepte>
+
