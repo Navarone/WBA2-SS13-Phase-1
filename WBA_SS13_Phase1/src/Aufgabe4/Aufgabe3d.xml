@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Rezepte xmlns="http://www.example.org/Aufgabe3d">
+    <Rezept>
+        <Titel>Lenchen's Schokoladenkuchen</Titel>
+        <Autor>Leen</Autor>
+        <Bild>http://static.chefkoch-cdn.de/ck.de/rezepte/2/2464/13053-960x720-lenchen_s_schokoladenkuchen.jpg</Bild>
+        <Zutaten>
+            <Zutat Einheit="g" Menge="200.0" Bezeichnung="Butter"/>
+            <Zutat Einheit="g" Menge="200.0" Bezeichnung="Zucker"/>
+            <Zutat Einheit="g" Menge="200.0" Bezeichnung="Schokolade, Blockschokolade"/>
+            <Zutat Einheit="g" Menge="120.0" Bezeichnung="Mehl"/>
+            <Zutat Einheit="TL" Menge="0.5" Bezeichnung="Backpulver"/>
+            <Zutat Einheit="Pkt." Menge="1.0" Bezeichnung="Vanillezucker"/>
+            <Zutat Einheit="Stk." Menge="4.0" Bezeichnung="Ei(er)"/>
+        </Zutaten>
+        <Zubereitung>
+            <Portionen>16</Portionen>
+            <Arbeitszeit Zeitangabe="Std." Dauer="1"/>
+            <Schwierigkeitsgrad Typ="normal"/>
+            <Brennwert_p.P. Menge="295" Einheit="kcal"/>
+            <Zubereitungsschritte>
+                <Zubereitungsschritt>Butter und Schokolade im Wasserbad schmelzen.</Zubereitungsschritt>
+                <Zubereitungsschritt>Eier trennen.</Zubereitungsschritt>
+                <Zubereitungsschritt>Eigelbe, Zucker und Eiweiß steif schlagen.</Zubereitungsschritt>
+                <Zubereitungsschritt>Vanillezucker verrühren.</Zubereitungsschritt>
+                <Zubereitungsschritt>Geschmolzene Butter-Schokomasse hinzufügen und mischen.</Zubereitungsschritt>
+                <Zubereitungsschritt>Mehl mit dem Backpulver in die Masse sieben und zum Schluss die steifen Eiweiße vorsichtig unterheben.</Zubereitungsschritt>
+                <Zubereitungsschritt>In eine gut gefettete Form geben.</Zubereitungsschritt>
+                <Zubereitungsschritt>Bei 180°Grad 40 – 50 Minuten backen.</Zubereitungsschritt>
+            </Zubereitungsschritte>
+        </Zubereitung>
+        <Kommentare>
+            <Kommentar Text="Habe Deinen Kuchen gestern gebacken (kleine Abwandlung: statt Blockschokolade hatte ich nur Kuvertüre, zartbitter und ich habe noch etwas Rumaroma und eine Prise Salz dazugegeben) mein LAG war total begeistert. Ich übrigends auch, super Rezept." Uhrzeit="18:49:00" Datum="2002-02-07" Autor="swieselchen"/>
+            <Kommentar Text="Habe ihn eben gebacken und bin begeistert.Super Rezept:-)" Uhrzeit="15:06:00" Datum="2003-01-01" Autor="Mane"/>
+            <Kommentar Text="Das ist voll lecker." Autor="Bienchen"/>
+        </Kommentare>
+    </Rezept>
+    <Rezept>
+        <Titel>Rosinenbrot</Titel>
+        <Autor>knoedelmaus</Autor>
+        <Bild>http://static.chefkoch-cdn.de/ck.de/rezepte/152/152146/361634-960x720-rosinenbrot.jpg</Bild>
+        <Zutaten>
+            <Zutat Einheit="ml" Menge="500.0" Bezeichnung="Milch"/>
+            <Zutat Einheit="g" Menge="900.0" Bezeichnung="Mehl, (Typ 550)"/>
+            <Zutat Einheit="g" Menge="80.0" Bezeichnung="Margarine"/>
+            <Zutat Einheit="g" Menge="80.0" Bezeichnung="Zucker"/>
+            <Zutat Einheit="g" Menge="6.0" Bezeichnung="Salz"/>
+            <Zutat Einheit="Pck." Menge="2.0" Bezeichnung="Trockenhefe"/>
+            <Zutat Einheit="g" Menge="150.0" Bezeichnung="Rosinen"/>
+            <Zutat Bezeichnung="Margarine, zum einfetten"/>
+        </Zutaten>
+        <Zubereitung>
+            <Portionen>1</Portionen>
+            <Arbeitszeit Zeitangabe="Min." Dauer="15"/>
+            <Ruhezeit Zeitangabe="Std." Dauer="2"/>
+            <Schwierigkeitsgrad Typ="simpel"/>
+            <Brennwert_p.P. Einheit="keine Angabe"/>
+            <Zubereitungsschritte>
+                <Zubereitungsschritt>Margarine auflösen, die Milch zugeben.</Zubereitungsschritt>
+                <Zubereitungsschritt>Diese Flüssigkeit mit Mehl, Zucker, Salz und Dauerbackhefe zu einem festen Teig verkneten, zum Schluss noch die Rosinen unterkneten.</Zubereitungsschritt>
+                <Zubereitungsschritt>Den Teig ca. 1 Std. gehen lassen.</Zubereitungsschritt>
+                <Zubereitungsschritt>Danach noch einmal durchkneten und in eine gefettete Brotback- oder große Kastenkuchenform geben.</Zubereitungsschritt>
+                <Zubereitungsschritt>Backofen auf 50° C vorheizen, ausstellen und das Brot darin noch einmal ca. 15 Min. gehen lassen.</Zubereitungsschritt>
+                <Zubereitungsschritt>Danach den Backofen auf 180° C Ober- und Unterhitze einstellen und das Rosinenbrot ca. 40 - 45 Min. backen.</Zubereitungsschritt>
+            </Zubereitungsschritte>
+        </Zubereitung>
+        <Kommentare>
+            <Kommentar Text="Hallo Knödelmaus,    habe heute dieses wunderbare Rosinenbrot gebacken. Muss sagen, perfekt, ein toller Teig, der nicht klebt sich wunderbar verarbeiten läßt und auch noch wunderbar schmeckt. Ich hatte leider kein Mehl (Typ 550) und habe dann mein übliches Mehl Type 405) genommen, ansonsten genau nach Anleitung. Der Teig ist wunderbar aufgegangen.   Eine Frage habe ich nur, aber ich denke das geht, hast Du schon Erfahrung mit Einfrieren. Ich friere immer gerne 3-4 Scheiben ein und hole diese dann nach Bedarf aus der Truhe!.Ich werde es versuchen und das Ergebnis mitteilen.    Dankeschön für das schöne Rezept, ist schon gespeichert. Fotos von dem heutigen Ergebnis sind schon unterwegs.     Liebe Grüße aus Hilden   Birgit " Uhrzeit="16:23:00" Datum="2010-09-17" Autor="Hobbykochen"/>
+            <Kommentar Text="Hallo knoedelmaus,    auch wir haben dein Rosinenbrot heute getestet.    Einfach in der Herstellung, lecker in der Vertilgung.    Ich hatte leider keine Margarine mehr und habe stattdessen Sonnenblumenöl genommen - war kein Problem.    Herzlichen Dank für das tolle Rezept.   Bilder werden hochgeladen.    Gruß   Amboss110 " Uhrzeit="22:26:00" Datum="2010-09-19" Autor="Amboss110"/>
+        </Kommentare>
+    </Rezept>
+</Rezepte>
