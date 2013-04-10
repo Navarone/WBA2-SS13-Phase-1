@@ -9,14 +9,13 @@ import java.util.Scanner;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
-import javax.xml.bind.PropertyException;
 import javax.xml.bind.Unmarshaller;
 
 import Aufgabe4.Rezepte.Rezept.Kommentare.Kommentar;
 
 public class Aufgabe4 {
 
-	
+	//Hier wird ein Scanner angelegt, der später die Eingaben einlesen soll
 	static Scanner scanner = new Scanner (System.in);
 	/**
 	 * @param args
@@ -27,6 +26,7 @@ public class Aufgabe4 {
 		Boolean menue = true;
 		int eingabe = 0;
 		
+		//Die Variable "datei" wird hier angelegt, um auf die .xml-Datei zugreifen zu können
 		File datei = new File("/Users/Sven/git/WBA2-SS13-Phase-1/WBA_SS13_Phase1/src/Aufgabe4/Aufgabe3d.xml");		
 				
 		JAXBContext context = JAXBContext.newInstance(Rezepte.class);
@@ -35,6 +35,8 @@ public class Aufgabe4 {
 	    Unmarshaller um = context.createUnmarshaller();
 	    Rezepte rezepte = (Rezepte) um.unmarshal (datei);
 	    
+	    //So lange die while-Schleife = true ist wird das Menü ausgeführt
+	    //Es ist möglich die XML-Daten mit einer 1 auszugeben, neue Kommentare mit einer 2 an ein Rezept hinzuzufügen oder das Programm mit einer 3 zu beenden
 	    while (menue == true){
 	    	System.out.println("");
 	    	System.out.println("Wählen Sie die 1 für die Ausgabe der XML-Datei: ");
@@ -124,6 +126,8 @@ public class Aufgabe4 {
 	    }
 	}
 	
+	@SuppressWarnings("resource")
+	//
 	public static void neuerKommentar(Rezepte rezepte, File datei, Marshaller m) throws IOException, JAXBException{
 		Writer w = new FileWriter(datei);
 		Kommentar kommentar = new Kommentar();
@@ -143,17 +147,19 @@ public class Aufgabe4 {
 		//System.out.println("Bitte geben Sie ein Datum ein (JJJJ-MM-TT): ");
 		//kommentar.setDatum(getString());
 		//System.out.println("Bitte geben Sie eine Uhrzeit ein (HH:MM:SS): ");
-		//kommentar.setAutor(getString());
+		//kommentar.setTime(getString());
 		System.out.println("Bitte geben Sie einen Text ein: ");
 		kommentar.setText(getString());
 		
 		m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+		//x-1, damit das erste Rezept benutzt wird, um einen Kommentar dort hinzufügen zu können
 		y=rezepte.getRezept().get(x-1).getKommentare().getKommentar().size();
 		rezepte.getRezept().get(x-1).getKommentare().getKommentar().add(y, kommentar);
 		
 		m.marshal(rezepte, w);
 	}
 	
+	//diese Funktion liest die ganze Zeile ein
 	public static String getString (){
 		Scanner input = new Scanner(System.in);
 		return input.nextLine();
