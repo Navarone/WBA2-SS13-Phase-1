@@ -87,9 +87,14 @@ public class Aufgabe4 {
         
         //Zutaten
         for (int j = 0; j < rezepte.getRezept().get(i).getZutaten().getZutat().size();j++){
-          System.out.print("Zutat: " + rezepte.getRezept().get(i).getZutaten().getZutat().get(j).getMenge() + " ");
-          System.out.print(rezepte.getRezept().get(i).getZutaten().getZutat().get(j).getEinheit() + " ");
-          System.out.println(rezepte.getRezept().get(i).getZutaten().getZutat().get(j).getBezeichnung());
+        	System.out.print("Zutat: ");
+        	if(rezepte.getRezept().get(i).getZutaten().getZutat().get(j).getMenge() != null){
+		        System.out.print(rezepte.getRezept().get(i).getZutaten().getZutat().get(j).getMenge() + " ");
+        	}
+        	if(rezepte.getRezept().get(i).getZutaten().getZutat().get(j).getEinheit() != null){
+		        System.out.print(rezepte.getRezept().get(i).getZutaten().getZutat().get(j).getEinheit() + " ");
+        	}
+		        System.out.println(rezepte.getRezept().get(i).getZutaten().getZutat().get(j).getBezeichnung());
         }
         
         //Zubereitung
@@ -111,8 +116,11 @@ public class Aufgabe4 {
         System.out.println("Schwierigkeitsgrad: " + rezepte.getRezept().get(i).getZubereitung().getSchwierigkeitsgrad().getTyp());
         
         //Brennwert p.P.
-        System.out.print("Brennwert p.P.: " + rezepte.getRezept().get(i).getZubereitung().getBrennwertPP().getMenge() + " ");
-        System.out.println(rezepte.getRezept().get(i).getZubereitung().getBrennwertPP().getEinheit());
+        System.out.print("Brennwert p.P.: ");
+        if(rezepte.getRezept().get(i).getZubereitung().getBrennwertPP().getMenge() != null){
+	        System.out.print(rezepte.getRezept().get(i).getZubereitung().getBrennwertPP().getMenge() + " ");
+        }
+	    System.out.println(rezepte.getRezept().get(i).getZubereitung().getBrennwertPP().getEinheit());
         
         //Zubereitungsschritte
         for (int k = 0; k < rezepte.getRezept().get(i).getZubereitung().getZubereitungsschritte().getZubereitungsschritt().size();k++){
