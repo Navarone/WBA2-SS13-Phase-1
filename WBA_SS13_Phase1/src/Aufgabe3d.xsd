@@ -3,22 +3,31 @@
 	<xs:element name="Rezepte">
 		<xs:complexType>
 			<xs:sequence>
+				<!-- Es muss mindestens ein Rezept erstellt werden, damit es sinn macht. Es können aber unbegrenzt Rezepte hinzugefügt werden. -->
 				<xs:element name="Rezept" maxOccurs="unbounded" minOccurs="1">
 					<xs:complexType>
 						<xs:sequence>
+							<!-- Titel kann und muss ein mal vergeben werden, der Untertitel ist jedoch optional, da er nicht in jedem Rezept verwendet wird.
+								 Werden minOccurs und macOccurs weggelassen, sind die Standardwerte bei beidem auf 1. -->
 							<xs:element name="Titel" type="xs:string" maxOccurs="1" minOccurs="1"/>
 							<xs:element name="Untertitel" type="xs:string" minOccurs="0" maxOccurs="1"/>
 							<xs:element name="Autor" type="xs:string"/>
+							<!-- Bilder werden extern gelagert und können somit als Link angegeben werden. -->
 							<xs:element name="Bild" type="xs:anyURI" minOccurs="0"/>
+							<!-- Zutaten setzt sich aus einzelnen Zutaten zusammen. -->
 							<xs:element name="Zutaten">
 								<xs:complexType>
 									<xs:sequence>
+										<!-- Es ist durch das "unbounded" möglich so viele Zutaten wie benötigt hinzuzufügen. -->
 										<xs:element name="Zutat" maxOccurs="unbounded">
 											<xs:complexType>
+												<!-- Bezeichnung ist zwingend erforderlich, demnach als "required" gekennzeichnet, im Gegensatz zu Menge und Einheit, die hier optional sind. Bsp. siehe Rezept 2. 
+													 Bei Attributen kann man minOccurs o.ä. nicht nutzen, demnach muss mit "use" gearbeitet werden. -->
 												<xs:attribute name="Bezeichnung" type="xs:string" use="required"/>
 												<xs:attribute name="Menge" type="xs:float" use="optional"/>
 												<xs:attribute name="Einheit" use="optional">
 													<xs:simpleType>
+														<!-- Dem Attribut Einheit sind enumarations zugeordnet, um die Auswahl der Einheiten zu beschränken. -->
 														<xs:restriction base="xs:string">
 															<xs:enumeration value="g"/>
 															<xs:enumeration value="TL"/>
@@ -39,6 +48,7 @@
 								<xs:complexType>
 									<xs:sequence>
 										<xs:element name="Portionen" type="xs:int" minOccurs="1"/>
+										<!-- Die Angaben von Arbeitszeit, sowie Ruhezeit sind auch hier in Attribute eingeteilt, um die Zeitangabe zur Vereinheitlichung einzugrenzen. -->
 										<xs:element name="Arbeitszeit">
 											<xs:complexType>
 												<xs:attribute name="Dauer" type="xs:int"/>
@@ -52,6 +62,7 @@
 												</xs:attribute>
 											</xs:complexType>
 										</xs:element>
+										<!-- Ruhezeit ist hier optional (minOccurs="0"), da nicht jedes Rezept eine Ruhezeit benötigt. -->
 										<xs:element name="Ruhezeit" minOccurs="0">
 											<xs:complexType>
 												<xs:attribute name="Dauer" type="xs:int"/>
@@ -65,6 +76,7 @@
 												</xs:attribute>
 											</xs:complexType>
 										</xs:element>
+										<!-- Um hier auch die Auswahl zu beschränken, Attribut "Typ" mit vordefinierten Auswahlmöglichkeiten. -->
 										<xs:element name="Schwierigkeitsgrad">
 											<xs:complexType>
 												<xs:attribute name="Typ">
