@@ -10,17 +10,17 @@ Ein XML-Dokument heißt wohlgeformt, wenn es alle XML-Regeln einhält:
 
 
 Validität:
-Soll XML für den Datenaustausch verwendet werden, ist es von Vorteil, 
-wenn das Format mittels einer Grammatik (z. B. einer Dokumenttypdefinition 
-oder eines XML-Schemas) definiert ist. Der Standard definiert ein XML-Dokument 
-als gültig, wenn es wohlgeformt ist, den Verweis auf eine Grammatik enthält 
-und das durch die Grammatik beschriebene Format einhält.
+Möchte man XML zum Datenaustausch benutzen, sollte es zuerst mittels einer Grammatik definiert werden.
+Dies geschieht z.B. durch Doctype-Definitions oder XML-Schemas. Ist ein XML-Dokument wohlgeformt,
+enthält einen Verweis auf die Grammatik und hält das dort beschriebene Format ein, so wird dieses 
+Dokument als gültig bzw. valide definiert.
 
 
-XML-Namensräume (XML namespaces) werden benutzt, um das Vokabular 
-eines XML-Dokumentes eindeutig zu identifizieren und um in einem einzelnen 
-Dokument mehrere XML-Sprachen zu mischen. Ihre Funktionsweise ist mit 
-Vorwahlen bei Telefonnummern zu vergleichen.
-Zum Beispiel beschreibt das <p>-Element in XHTML einen Absatz; in einer XML-Sprache
- für eine Personendatenbank könnte <p> ein Element für eine Person darstellen. 
-Namensräume erlauben, diese Elemente eindeutig zu unterscheiden
+XML-Namensräume (XML namespaces):
+Sie werden benutzt, um das Vokabular eines XML-Dokumentes eindeutig zu identifizieren 
+und um in einem einzelnen Dokument mehrere XML-Sprachen zu mischen. 
+Beispielsweise kann man ihre Funktionalität mit der von Vorwahlen bei Telefonnummern vergleichen.
+Oder ein anderes Beispiel:
+Ein <p>-Element in einem XHTML beschreibt z.B. einen Absatz. 
+In einer XML-Sprache jedoch könnte ein <p> Element in einer Personendatenbank für eine Person stehen. 
+Demnach erlauben Namensräume, diese Elemente eindeutig zu unterscheiden.
