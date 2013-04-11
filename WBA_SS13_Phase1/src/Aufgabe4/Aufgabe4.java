@@ -20,18 +20,24 @@ public class Aufgabe4 {
 	/**
 	 * @param args
 	 * @throws JAXBException 
-	 * @throws IOException 
+	 * @throws IOException
+	 * @author Sven
 	 */
 	public static void main(String[] args) throws JAXBException, IOException {
 		Boolean menue = true;
 		int eingabe = 0;
 		
-		//Die Variable "datei" wird hier angelegt, um auf die .xml-Datei zugreifen zu können
+		//Die Variable "datei" wird hier angelegt, um die .xml-Datei darin zu speichern
 		File datei = new File("/Users/Sven/git/WBA2-SS13-Phase-1/WBA_SS13_Phase1/src/Aufgabe4/Aufgabe3d.xml");		
-				
+			
+		//Hier wird das JAXB Objekt erstellt
 		JAXBContext context = JAXBContext.newInstance(Rezepte.class);
+		
+		//Marshaller
 	    Marshaller m = context.createMarshaller();
 	    m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+	    
+	    //Unmarshaller
 	    Unmarshaller um = context.createUnmarshaller();
 	    Rezepte rezepte = (Rezepte) um.unmarshal (datei);
 	    
@@ -127,7 +133,8 @@ public class Aufgabe4 {
 	}
 	
 	@SuppressWarnings("resource")
-	//
+	//Einen  neuen Kommentar hinzufügen
+	//Datum und Uhrzeit müssen noch eingebunden werden, bisher noch auskommentiert
 	public static void neuerKommentar(Rezepte rezepte, File datei, Marshaller m) throws IOException, JAXBException{
 		Writer w = new FileWriter(datei);
 		Kommentar kommentar = new Kommentar();
