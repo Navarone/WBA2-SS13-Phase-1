@@ -9,7 +9,7 @@ Ein XML-Dokument heißt wohlgeformt, wenn es alle XML-Regeln einhält:
 - Alle Zeichen entsprechen dem spezifizierten Zeichensatz
 
 
-Validität:
+Validität: 
 Möchte man XML zum Datenaustausch benutzen, sollte es zuerst mittels einer Grammatik definiert werden.
 Dies geschieht z.B. durch Doctype-Definitions oder XML-Schemas. Ist ein XML-Dokument wohlgeformt,
 enthält einen Verweis auf die Grammatik und hält das dort beschriebene Format ein, so wird dieses 
