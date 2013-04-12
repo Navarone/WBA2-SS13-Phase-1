@@ -1,0 +1,14 @@
+Diskutieren Sie, warum es sinnvoll ist Daten in Formaten wie XML oder JSON zu speichern. 
+Stellen Sie außerdem die beiden Formate gegenüber und erläutern Sie kurz deren Vor- und Nachteile. 
+
+
+Es ist sinnvoll textbasierte Daten in Formaten wie XML oder JSON zu speichern, da man für beide Formate die Struktur 
+der Daten selbst definieren kann. XML und JSON haben beide einen sehr einfachen Aufbau und sind demnach auch gut 
+lesbar, verständlich und somit leicht zu benutzen.
+Jedoch ist XML in der Praxis weiter verbreitet, da es sich hier um eine Auszeichnungssprache handelt und somit diese vielseitiger einsetzbar ist.
+Wird aber von JSON aufgrund seiner Einfachheit dort zurückgedrängt, wo keine komplizierten Auszeichnungen notwendig sind.
+JSON ist lediglich ein Datenaustauschformat zwischen Anwendungen und hat somit eine simplere Syntax als XML.
+Demnach reduziert JSON in der Regel den Overhead (eventuell entbehrlichen Mehraufwand, der nicht direkt Nutzen erzeugt) im Vergleich zu XML
+und benötigt dadurch sogar weniger Speicherplatz. 
+Ein Vorteil von JSON ist es ebenfalls, dass es sich bis auf wenige Einschränkungen schon um valides JavaScript handelt.
+Ein Nachteil beider Formate ist der, dass Binärdatentypen nicht gut representiert werden können, da beide diese Typen nicht unterstützen.
